@@ -4,7 +4,7 @@
 
 const form = document.querySelector('.form-quizz');
 let tableauResultats = [];
-const reponses = ['c', 'a', 'b', 'a', 'c'];
+const reponses = ['c', 'b', 'c', 'a', 'c'];
 const emojis = ['✔️', '✨', '👀', '😭', '👎'];
 const titreResultat = document.querySelector('.resultats h2');
 const noteResultat = document.querySelector('.note');
@@ -56,28 +56,28 @@ function afficherResultats(tabCheck) {
             noteResultat.innerText = '5/5';
             break;
         case 1:
-            titreResultat.innerText = `✨Vous y etes presque ✨ `;
-            aideResultat.innerText = 'Retentez une autre réponse dans la question rouge, puis revalidez';
+            titreResultat.innerText = `✨Presque ! ✨ `;
+            aideResultat.innerText = 'Plus qu''une seule question rouge';
             noteResultat.innerText = '4/5';
             break;
         case 2:
-            titreResultat.innerText = `✨ Encore un effort 👀 `;
-            aideResultat.innerText = 'Retentez une autre réponse dans les questions rouges, puis revalidez';
+            titreResultat.innerText = `✨ Pousse ! 👀 `;
+            aideResultat.innerText = 'Retente les questions rouges, puis revalide';
             noteResultat.innerText = '3/5';
             break;
         case 3:
-            titreResultat.innerText = `👀 Il reste quelques erreurs ! 😭 `;
-            aideResultat.innerText = 'Retentez une autre réponse dans les questions rouges, puis revalidez';
+            titreResultat.innerText = `👀 50% ! Il reste quelques erreurs ! 😭 `;
+            aideResultat.innerText = 'Retente les questions rouges, puis revalide';
             noteResultat.innerText = '2/5';
             break;
         case 4:
             titreResultat.innerText = `😭 Peux mieux faire ! 😭 `;
-            aideResultat.innerText = 'Retentez une autre réponse dans les questions rouges, puis revalidez';
+            aideResultat.innerText = 'Retente les questions rouges, puis revalide';
             noteResultat.innerText = '1/5';
             break;
         case 5:
-            titreResultat.innerText = `👎 Peux mieux faire ! 👎 `;
-            aideResultat.innerText = 'Retentez une autre réponse dans les questions rouges, puis revalidez';
+            titreResultat.innerText = `👎 Cache-toi ! 👎 `;
+            aideResultat.innerText = 'Retente, puis revalide';
             noteResultat.innerText = '0/5';
             break;
         default:
