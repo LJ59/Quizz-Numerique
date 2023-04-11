@@ -57,7 +57,7 @@ function afficherResultats(tabCheck) {
             break;
         case 1:
             titreResultat.innerText = `✨Presque ! ✨ `;
-            aideResultat.innerText = 'Plus qu''une seule question rouge';
+            aideResultat.innerText = 'Il reste une seule question rouge';
             noteResultat.innerText = '4/5';
             break;
         case 2:
