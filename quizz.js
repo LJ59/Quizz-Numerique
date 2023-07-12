@@ -51,33 +51,33 @@ function afficherResultats(tabCheck) {
     //console.log(nbDeFautes);
     switch (nbDeFautes) {
         case 0:
-            titreResultat.innerText = `✔️ Bravo, c'est un sans faute ✔️ `;
+            titreResultat.innerText = `✔️ Tu es incollable sur le numérique ✔️ `;
             aideResultat.innerText = '';
             noteResultat.innerText = '5/5';
             break;
         case 1:
-            titreResultat.innerText = `✨Presque ! ✨ `;
-            aideResultat.innerText = 'Il reste une seule question rouge';
+            titreResultat.innerText = `✨Presque au top! ✨ `;
+            aideResultat.innerText = 'échangeons autour du numérique';
             noteResultat.innerText = '4/5';
             break;
         case 2:
             titreResultat.innerText = `✨ Pousse ! 👀 `;
-            aideResultat.innerText = 'Retente les questions rouges, puis revalide';
+            aideResultat.innerText = 'échangeons autour du numérique';
             noteResultat.innerText = '3/5';
             break;
         case 3:
             titreResultat.innerText = `👀 50% ! Il reste quelques erreurs ! 😭 `;
-            aideResultat.innerText = 'Retente les questions rouges, puis revalide';
+            aideResultat.innerText = 'échangeons autour du numérique';
             noteResultat.innerText = '2/5';
             break;
         case 4:
             titreResultat.innerText = `😭 Peux mieux faire ! 😭 `;
-            aideResultat.innerText = 'Retente les questions rouges, puis revalide';
+            aideResultat.innerText = 'échangeons autour du numérique';
             noteResultat.innerText = '1/5';
             break;
         case 5:
             titreResultat.innerText = `👎 Cache-toi ! 👎 `;
-            aideResultat.innerText = 'Retente, puis revalide';
+            aideResultat.innerText = 'échangeons autour du numérique';
             noteResultat.innerText = '0/5';
             break;
         default:
